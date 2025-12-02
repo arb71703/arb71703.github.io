@@ -1,0 +1,175 @@
+/* ---------------- PROJECTS PAGE ONLY ---------------- */
+
+/* Main header + intro */
+#pageContent h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+#pageContent p {
+    font-size: 16px;
+}
+
+
+
+
+
+/* ---------- INTRO TEXT BOX ---------- */
+
+.intro-box {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 24px 28px 24px 40px; /* extra left padding for the line */
+    background-color: #25232B;    /* darker version of your background */
+    border-radius: 12px;
+}
+
+/* vertical gradient line on the left */
+.intro-box::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    bottom: 16px;
+    width: 4px;
+    border-radius: 999px;
+    background: linear-gradient(to bottom, #DEB841, #DE9E36); /* match banner gold */
+}
+
+/* tweak heading & text inside the box */
+.intro-box h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.intro-box p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* ----- LINK STYLING INSIDE INTRO BOX ----- */
+
+.intro-box a {
+    color: #ffffff;               /* white text */
+    text-decoration: none;        /* remove underline */
+    font-weight: 600;             /* slightly bold */
+}
+
+.intro-box a:hover {
+    color: #DEB841;               /* gold on hover */
+    text-decoration: underline;   /* optional underline on hover */
+    text-underline-offset: 3px;   /* cleaner underline spacing */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- PROJECT GRID ---------------- */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    background: linear-gradient(to top, #DEB841, #DE9E36);
+    border-radius: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.25s ease, box-shadow 0.25s ease; /* NEW */
+}
+
+.project-card:hover {
+    transform: scale(1.03); /* NEW — gentle grow */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* NEW — soft shadow */
+}
+
+
+/* ---------------- VIDEO THUMBNAIL + PLAYER ---------------- */
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+    background-color: #F6E8D0;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Thumbnail image */
+.video-wrapper .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+/* Video (hidden until click) */
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* JS switches this to block */
+}
+
+/* ---------------- PROJECT TEXT ---------------- */
+
+.project-info {
+    margin-top: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.25); /* LOW OPACITY GRAY BOX */
+    backdrop-filter: blur(2px);       /* OPTIONAL: subtle blur for premium look */
+}
+
+
+
+.project-info h2 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: none; /* shadow no longer needed */
+}
+
+
+
+.project-info p {
+    margin: 0;
+}

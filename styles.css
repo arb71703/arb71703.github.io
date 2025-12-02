@@ -1,0 +1,117 @@
+/* ---------------- GLOBAL SITE STYLES ---------------- */
+
+body {
+    margin: 0;
+    background-color: #2B2830;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------- FIXED BANNER ---------------- */
+
+#bannerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #34303B;
+    z-index: 999;
+}
+
+#banner {
+    width: 100%;
+    max-width: 2100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#banner td {
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------- PAGE LAYOUT ---------------- */
+
+#pageContent {
+    padding-top: 250px; /* space under fixed banner */
+    color: white;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+
+
+
+/* ---------------- CONTACT FORM ---------------- */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    /* no max-width here so it stays wide inside .intro-box */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Make ALL form controls share the same width & edge alignment */
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    box-sizing: border-box;  /* includes padding in the width */
+}
+
+/* Inputs / textarea styling */
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #6D6A75;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #DEB841;
+}
+
+/* Button styling */
+.contact-form button {
+    margin-top: 4px;
+    padding: 12px 18px; /* inner padding, but width is still 100% thanks to box-sizing */
+    background: linear-gradient(to right, #DEB841, #DE9E36);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}

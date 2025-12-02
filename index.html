@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #2B2830;
+            font-family: Arial, sans-serif;
+        }
+
+        #bannerWrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #34303B;
+            z-index: 999;
+        }
+
+        #pageContent {
+            padding-top: 350px;
+            color: white;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #banner {
+            width: 100%;
+            max-width: 2100px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        #banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #banner td {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="bannerWrapper">
+<table id="banner" border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+        <td rowspan="2">
+            <img src="images/header_01.jpg" alt="">
+        </td>
+        <td colspan="3">
+            <img src="images/header_02.jpg" alt="">
+        </td>
+    </tr>
+
+    <tr>
+        <!-- HOME (Selected) -->
+        <td>
+            <a href="index.html">
+                <img src="images/header_03_SELECTED.png"
+                     alt="Home"
+                     onmouseover="this.src='images/header_03_hover_SELECTED.png';"
+                     onmouseout="this.src='images/header_03_SELECTED.png';">
+            </a>
+        </td>
+
+        <!-- PROJECTS -->
+        <td>
+            <a href="projects.html">
+                <img src="images/header_04.png"
+                     alt="Projects"
+                     onmouseover="this.src='images/header_04_hover.png';"
+                     onmouseout="this.src='images/header_04.png';">
+            </a>
+        </td>
+
+        <!-- CONTACT -->
+        <td>
+            <a href="contact.html">
+                <img src="images/header_05.png"
+                     alt="Contact"
+                     onmouseover="this.src='images/header_05_hover.png';"
+                     onmouseout="this.src='images/header_05.png';">
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td><img src="images/header_06.jpg" alt=""></td>
+        <td><img src="images/header_07.jpg" alt=""></td>
+        <td><img src="images/header_08.jpg" alt=""></td>
+        <td><img src="images/header_09.jpg" alt=""></td>
+    </tr>
+
+</table>
+</div>
+
+<div id="pageContent">
+    <h1>Home</h1>
+    <p>Welcome to the home page.</p>
+</div>
+
+</body>
+</html>

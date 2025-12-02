@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Projects / shared page styles (includes .intro-box + link styles) -->
+    <link rel="stylesheet" href="projects.css">
+
+    <style>
+        /* Contact-page-specific layout overrides (lightweight) */
+
+        body {
+            margin: 0;
+            background-color: #2B2830;
+            font-family: Arial, sans-serif;
+        }
+
+        #bannerWrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #34303B;
+            z-index: 999;
+        }
+
+        #banner {
+            width: 100%;
+            max-width: 2100px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        #banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #banner td {
+            padding: 0;
+            margin: 0;
+        }
+
+        #pageContent {
+            max-width: 900px;
+            margin: auto;
+            padding-top: 250px; /* adjust if you want closer to the banner */
+            padding-bottom: 80px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="bannerWrapper">
+    <table id="banner" border="0" cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td rowspan="2">
+                <img src="images/header_01.jpg" alt="">
+            </td>
+            <td colspan="3">
+                <img src="images/header_02.jpg" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <!-- HOME -->
+            <td>
+                <a href="index.html">
+                    <img src="images/header_03.png"
+                         alt="Home"
+                         onmouseover="this.src='images/header_03_hover.png';"
+                         onmouseout="this.src='images/header_03.png';">
+                </a>
+            </td>
+
+            <!-- PROJECTS -->
+            <td>
+                <a href="projects.html">
+                    <img src="images/header_04.png"
+                         alt="Projects"
+                         onmouseover="this.src='images/header_04_hover.png';"
+                         onmouseout="this.src='images/header_04.png';">
+                </a>
+            </td>
+
+            <!-- CONTACT (Selected) -->
+            <td>
+                <a href="contact.html">
+                    <img src="images/header_05_SELECTED.png"
+                         alt="Contact"
+                         onmouseover="this.src='images/header_05_hover_SELECTED.png';"
+                         onmouseout="this.src='images/header_05_SELECTED.png';">
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="images/header_06.jpg" alt=""></td>
+            <td><img src="images/header_07.jpg" alt=""></td>
+            <td><img src="images/header_08.jpg" alt=""></td>
+            <td><img src="images/header_09.jpg" alt=""></td>
+        </tr>
+
+    </table>
+</div>
+
+<!-- MAIN PAGE CONTENT -->
+<div id="pageContent">
+
+ <div class="intro-box">
+    <h1>Contact</h1>
+
+    <p>
+        If you’d like to reach out for collaboration, project inquiries, or general questions,
+        you can contact me through the form below or use the direct methods listed.
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:anthony@berlongieri.com">anthony@berlongieri.com</a>
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        <a href="tel:4252958438">425-295-8438</a>
+    </p>
+
+    <hr style="border: none; height: 1px; background: #444; margin: 20px 0;">
+
+    <h2 style="margin-top: 0;">Send a Message</h2>
+
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+</body>
+</html>
