@@ -75,21 +75,20 @@
 
 
 
-
 /* Read more toggle button */
 .read-more-toggle {
     margin-top: 8px;
     padding: 6px 10px;
     background: none;
     border: none;
-    color: #DEB841;              /* gold-ish */
+    color: #DEB841;
     font-size: 14px;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
-    padding-left: 0;              /* align with text */
+    padding-left: 0;
 }
 
 .read-more-toggle:hover {
@@ -117,9 +116,6 @@
 .read-more-toggle.expanded .read-more-arrow {
     transform: rotate(180deg);
 }
-
-
-
 
 
 /* ---------------- PROJECT GRID ---------------- */
@@ -210,6 +206,9 @@
     color: #ffffff;
     text-shadow: none; /* shadow no longer needed */
 }
+
+
+
 
 
 
