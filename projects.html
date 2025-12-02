@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Projects-page-only styles -->
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<div id="bannerWrapper">
+    <table id="banner" border="0" cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td rowspan="2">
+                <img src="images/header_01.jpg" alt="">
+            </td>
+            <td colspan="3">
+                <img src="images/header_02.jpg" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <!-- HOME -->
+            <td>
+                <a href="index.html">
+                    <img src="images/header_03.png"
+                         alt="Home"
+                         onmouseover="this.src='images/header_03_hover.png';"
+                         onmouseout="this.src='images/header_03.png';">
+                </a>
+            </td>
+
+            <!-- PROJECTS (Selected) -->
+            <td>
+                <a href="projects.html">
+                    <img src="images/header_04_SELECTED.png"
+                         alt="Projects"
+                         onmouseover="this.src='images/header_04_hover_SELECTED.png';"
+                         onmouseout="this.src='images/header_04_SELECTED.png';">
+                </a>
+            </td>
+
+            <!-- CONTACT -->
+            <td>
+                <a href="contact.html">
+                    <img src="images/header_05.png"
+                         alt="Contact"
+                         onmouseover="this.src='images/header_05_hover.png';"
+                         onmouseout="this.src='images/header_05.png';">
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="images/header_06.jpg" alt=""></td>
+            <td><img src="images/header_07.jpg" alt=""></td>
+            <td><img src="images/header_08.jpg" alt=""></td>
+            <td><img src="images/header_09.jpg" alt=""></td>
+        </tr>
+
+    </table>
+</div>
+
+<div id="pageContent">
+    <div class="intro-box">
+        <h1>Level Design</h1>
+
+        <p>
+            Geometry Dash features an expansive level editor comparable to high-end animation software. 
+            Over the past decade it has grown and enabled a large community to create a rich audio-visual 
+            art medium.
+        </p>
+
+        <p>
+            The levels showcased here were designed entirely within the game’s level editor. 
+            This collection includes both independent projects and multi-creator collaborations, 
+            each planned and organized under my direction.
+        </p>
+    </div>
+
+
+    <div class="projects-grid">
+
+
+
+
+
+
+
+
+<!-- PROJECT 1 (Lumen) -->
+<div class="project-card" id="project2">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/lumen_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project2')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/Lumen.-.Arb.-.Arb.1080p.h264.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>Lumen</h2>
+
+        <!-- Always-visible short description -->
+        <p>A simple world of lights, colors, and they way it all shines.</p>
+
+        <!-- Read more toggle row -->
+ <button class="read-more-toggle" onclick="toggleDetails('project2')">
+    <span class="read-more-label">More info</span>
+    <span class="read-more-arrow">&#9662;</span>
+</button>
+
+        <!-- Hidden extra text -->
+        <div class="project-details" id="project2-details">
+            <p>
+                This was made for a small semi-private event a friend of mine organized called Spirit Day.
+                The goal was to get a group of people to each make something that embraced the spirit of
+                the game in some way, and all release our projects on the same day, August 13th.
+            </p>
+            
+            <p>
+            Created by - Arb
+            </p>
+            <p> 2025 </p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- PROJECT 2 -->
+<div class="project-card" id="project1">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/redshift_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project1')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/Redshift.-.Arb.and.Grax.-.Arb.1080p.h264.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>Redshift</h2>
+
+        <!-- Always-visible short description -->
+        <p>From the smallest atomic level to the edge of space itself, the unfathomable scale of the universe</p>
+
+        <!-- More info button -->
+        <button class="read-more-toggle" onclick="toggleDetails('project1')">
+            <span class="read-more-label">More info</span>
+            <span class="read-more-arrow">&#9662;</span>
+        </button>
+
+        <!-- Hidden expandable text -->
+        <div class="project-details" id="project1-details">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            
+            <p>
+            Created by - Arb & Grax
+            </p>
+            
+            <p> 2025 </p>
+            
+        </div>
+    </div>
+</div>
+
+        
+        
+        
+        
+
+<!-- PROJECT 3 -->
+<div class="project-card" id="project3">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/reactorcore_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project3')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/Reactor.Core.-.Arb.Yakob.Saria.and.More.-.Arb.1080p.h264.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>Reactor Core</h2>
+
+        <!-- Always-visible short description -->
+        <p>An unstable nuclear reactor and its consequences in the fallout.</p>
+
+        <!-- More info button -->
+        <button class="read-more-toggle" onclick="toggleDetails('project3')">
+            <span class="read-more-label">More info</span>
+            <span class="read-more-arrow">&#9662;</span>
+        </button>
+
+        <!-- Hidden expandable text -->
+        <div class="project-details" id="project3-details">
+            <p>
+                Lorem ipsum dolor sit amet
+            </p>
+            
+            
+            <p>
+            Created by - iIsane, nyab, Arb, balli, para, scrumpy, El3ctrO, MCres, Xyriak, vismuth, ZenthicAlpha, GDSkele, YakobNugget, Parallax, ML500, Jenkins, Grax, Mercury6779, RadiationV2, Subwoofer, Licen00, ISariaI, HelpegasuS, Buragoz, Ryder, Valentlne, Yoonsr, FunnyGame, nebunyyx, Loltad, stanstanmansan, Galaxxyss and Woofiee
+            </p>
+            
+            <p> 2023 </p>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+
+        
+        
+        
+        
+        
+
+<!-- PROJECT 4 -->
+<div class="project-card" id="project4">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/planetx_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project4')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/PLANET.X.-.Arb.1080p.h264.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>PLANET X</h2>
+
+        <!-- Always-visible short description -->
+        <p>The search for distant life led to PLANET X, but its core holds more questions than answers.</p>
+
+        <!-- More info button -->
+        <button class="read-more-toggle" onclick="toggleDetails('project4')">
+            <span class="read-more-label">More info</span>
+            <span class="read-more-arrow">&#9662;</span>
+        </button>
+
+        <!-- Hidden expandable text -->
+        <div class="project-details" id="project4-details">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur.
+            </p>
+            
+            <p>
+           Created by - lumpy, Kips, Balloons, YoReid, Jenkins, Grax, Presta, Arb, para, neigefeu and SpKale
+            </p>
+            
+            <p> 2022 </p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- PROJECT 5 -->
+<div class="project-card" id="project5">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/daydreamsend_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project5')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/Daydreams.End.-.Arb.1080p.h264.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>DAYDREAMS END</h2>
+
+        <!-- Always-visible short description -->
+        <p>Dreams of colors and fog, tales of love and loss.</p>
+
+        <!-- More info button -->
+        <button class="read-more-toggle" onclick="toggleDetails('project5')">
+            <span class="read-more-label">More info</span>
+            <span class="read-more-arrow">&#9662;</span>
+        </button>
+
+        <!-- Hidden expandable text -->
+        <div class="project-details" id="project5-details">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur.
+            </p>
+            
+             <p>
+            Created by - Arb
+            </p>
+            
+            <p> 2022 </p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- PROJECT 6 -->
+<div class="project-card" id="project6">
+    <div class="video-wrapper">
+        <img class="thumbnail" src="images/melancholic_thumb.jpg" alt="Thumbnail"
+             onclick="playVideo('project6')">
+
+        <video controls playsinline>
+            <source src="https://github.com/arb71703/arb71703.github.io/releases/download/videos-1/Melancholic.-.Arb.1080p.h264.-2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="project-info">
+        <h2>MELANCHOLIC</h2>
+
+        <!-- Always-visible short description -->
+        <p>The cozy feeling of warmth on the coldest day.</p>
+
+        <!-- More info button -->
+        <button class="read-more-toggle" onclick="toggleDetails('project6')">
+            <span class="read-more-label">More info</span>
+            <span class="read-more-arrow">&#9662;</span>
+        </button>
+
+        <!-- Hidden expandable text -->
+        <div class="project-details" id="project6-details">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur.
+            </p>
+            
+            <p>
+            Created by - Arb
+            </p>
+            
+            <p> 2020 </p>
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+<div id="scrollTopBtn" onclick="scrollToTop()">
+    <span>&#9650;</span>
+</div>
+
+
+
+
+
+
+<script>
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (window.scrollY > 300) {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+    } else {
+        btn.style.opacity = '0';
+        btn.style.pointerEvents = 'none';
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
+
+
+
+
+
+
+
+<!-- CLICK-TO-PLAY SCRIPT -->
+<script>
+function playVideo(cardId) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+
+    const thumb = card.querySelector(".thumbnail");
+    const video = card.querySelector("video");
+    if (!thumb || !video) return;
+
+    // Hide thumbnail completely
+    thumb.style.display = "none";
+
+    // Show video
+    video.style.display = "block";
+
+    // Try to play the video. If the browser blocks autoplay,
+    // the controls are visible so the user can hit Play.
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            // Autoplay blocked; do nothing, user will click play.
+        });
+    }
+}
+</script>
+
+
+
+<script>
+function toggleDetails(projectId) {
+    const details = document.getElementById(projectId + "-details");
+    if (!details) return;
+
+    const button = details.parentElement.querySelector(".read-more-toggle");
+    const label = button.querySelector(".read-more-label");
+
+    const isOpen = details.classList.contains("open");
+
+    if (isOpen) {
+        details.classList.remove("open");
+        button.classList.remove("expanded");
+        label.textContent = "More info";   // collapsed state
+    } else {
+        details.classList.add("open");
+        button.classList.add("expanded");
+        label.textContent = "Hide info";   // expanded state
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

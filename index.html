@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- Global + shared styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <!-- Home-page-only styles -->
+    <style>
+        body {
+            margin: 0;
+            background-color: #2B2830;
+            font-family: Arial, sans-serif;
+        }
+
+        #bannerWrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #34303B;
+            z-index: 999;
+        }
+
+        #banner {
+            width: 100%;
+            max-width: 2100px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        #banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #banner td {
+            padding: 0;
+            margin: 0;
+        }
+
+        #pageContent {
+            max-width: 1200px;      /* a bit wider so content can breathe */
+            margin: 0 auto;
+            padding-top: 250px;
+            padding-bottom: 80px;
+            color: white;
+        }
+
+      
+      
+      /* ---------- HOME LAYOUT: alternating image + text boxes ---------- */
+
+.home-row {
+    display: flex;
+    align-items: center;       /* was: stretch – lets cards size to content */
+    justify-content: space-between;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+/* Flip order for rows where image should be on the right */
+.home-row--image-right {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE CARD */
+.home-image-box {
+    flex: 0 0 auto;            /* shrink-wrap width around content */
+    max-width: 360px;          /* keep it from getting too wide */
+    background-color: #25232B;
+    border-radius: 24px;
+    padding: 16px;             /* a little tighter so it hugs the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image-box img {
+    width: auto;               /* use image’s natural width */
+    height: auto;              /* use image’s natural height */
+    max-width: 100%;           /* don’t overflow the card horizontally */
+    max-height: 320px;         /* clamp tall images */
+    object-fit: contain;       /* keep aspect ratio when clamped */
+    border-radius: 16px;
+    display: block;
+}
+
+/* TEXT CARD – no forced height; just let text define it */
+.home-text-box {
+    flex: 1 1 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text-box h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .home-row,
+    .home-row--image-right {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .home-image-box,
+    .home-text-box {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .home-image-box {
+        max-width: 100%;       /* let images take full width on mobile */
+    }
+}
+
+      
+      
+   
+      
+      
+         </style>
+         
+       
+       
+       
+       
+       
+             <script>
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (window.scrollY > 300) {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+    } else {
+        btn.style.opacity = '0';
+        btn.style.pointerEvents = 'none';
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+  
+         
+         
+         
+</head>
+<body>
+
+<div id="bannerWrapper">
+    <table id="banner" border="0" cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td rowspan="2">
+                <img src="images/header_01.jpg" alt="">
+            </td>
+            <td colspan="3">
+                <img src="images/header_02.jpg" alt="">
+            </td>
+        </tr>
+
+        <tr>
+            <!-- HOME (Selected) -->
+            <td>
+                <a href="index.html">
+                    <img src="images/header_03_SELECTED.png"
+                         alt="Home"
+                         onmouseover="this.src='images/header_03_hover_SELECTED.png';"
+                         onmouseout="this.src='images/header_03_SELECTED.png';">
+                </a>
+            </td>
+
+            <!-- PROJECTS -->
+            <td>
+                <a href="projects.html">
+                    <img src="images/header_04.png"
+                         alt="Projects"
+                         onmouseover="this.src='images/header_04_hover.png';"
+                         onmouseout="this.src='images/header_04.png';">
+                </a>
+            </td>
+
+            <!-- CONTACT -->
+            <td>
+                <a href="contact.html">
+                    <img src="images/header_05.png"
+                         alt="Contact"
+                         onmouseover="this.src='images/header_05_hover.png';"
+                         onmouseout="this.src='images/header_05.png';">
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><img src="images/header_06.jpg" alt=""></td>
+            <td><img src="images/header_07.jpg" alt=""></td>
+            <td><img src="images/header_08.jpg" alt=""></td>
+            <td><img src="images/header_09.jpg" alt=""></td>
+        </tr>
+
+    </table>
+</div>
+
+<div id="pageContent">
+
+    <!-- ROW 1: image left, text right -->
+    <div class="home-row">
+        <div class="home-image-box">
+            <img src="images/home_section1.jpg" alt="me">
+        </div>
+
+        <div class="intro-box home-text-box">
+            <h1>Hi, I'm Anthony</h1>
+            <p>
+                I'm a 22 year old living in Michigan, but you'll usually find me on another planet.
+            </p>
+            
+            <p>
+            	Coming from a rich background of both music and video-games, I find myself at the interception of the two with a desire to share their connection with others. 
+            	I've always listened to music and imagined worlds of colors, becoming more familiar with a wider range of digital tools allows me to bring these ideas to life. I hope to one day reach people with worlds of my own, and to create worlds with other like-minded people.
+            </p>
+            
+            <p>
+        	Whether its finding new albums to broaden my music taste, or trying as many different games as money and time allow, I'm fascinated by the range of expression within these mediums. Creative risks often prevail as the most memorable or noteworthy to me, those special traits keep things interesting. Leaning into those kinds of risks is what makes the process so enjoyable for me. 
+            </p>
+            
+        </div>
+    </div>
+
+    <!-- ROW 2: image right, text left -->
+    <div class="home-row home-row--image-right">
+        <div class="home-image-box">
+            <img src="images/home_section2.jpg" alt="Featured work 2">
+        </div>
+
+        <div class="intro-box home-text-box">
+            <h1>Music</h1>
+            <p>
+                I come from a family of musicians in every direction, from choir singers to rock stars and DJs, I similarly let music be a prominent aspect of my life.
+            </p>
+            <p>
+                This
+            </p>
+        </div>
+    </div>
+
+    <!-- ROW 3: image left, text right -->
+    <div class="home-row">
+        <div class="home-image-box">
+            <img src="images/home_section3.jpg" alt="Featured work 3">
+        </div>
+
+        <div class="intro-box home-text-box">
+            <h1>Level Design</h1>
+            <p>
+                Over the past decade the game Geometry Dash has occupied much of my free time. It combines music and visuals into a seemless experience thats captivated myself and millions of others over the years. Some of the most talented human beings on earth have come together to create experiences that are freely accessible. The level editor of the game has been updated slowly over the years, similar to how a game engine or adobe software would, and in its current state, the highest level work is almost indistinguishable from its alternative medium. If theres one thing that represents the Geometry Dash community best its the collective effort to demolish limitations. 
+            </p>
+            <p>
+                I grew up playing games like LittleBigPlanet or Happy Wheels where the community levels were often infinitely more interesting than anything in the main level roster. The interception of music in Geometry Dash trapped me and as the game updated and grew I found myself inspired by the custom works of others and the accessibility of creating those experiences. It has been an incredible playground to let my creativity flourish but I hope to carry those philosophies into game design long-term. For now, it serves as a way to reach a wide audience with my ideas, and hopefully some of them remember my stuff the way I remember those LittleBigPlanet levels.
+                            </p>
+                            
+                            <p> Any reference of "Arb" refers to myself, Anthony (Ray) Berlongieri.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div id="scrollTopBtn" onclick="scrollToTop()">
+    <span>&#9650;</span>
+</div>
+
+
+</body>
+</html>
