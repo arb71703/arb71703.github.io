@@ -48,6 +48,83 @@ body {
 
 
 
+
+
+
+
+
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+
+    /* Outer gradient ring */
+    background: linear-gradient(135deg, #DEB841, #DE9E36);
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Arrow color */
+    color: #BFBDC1;
+    font-size: 24px;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+/* Inner gray circle */
+#scrollTopBtn::before {
+    content: '';
+    position: absolute;
+    inset: 3px; /* thickness of the ring */
+    background-color: #6D6A75; /* inner gray fill */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Make sure the arrow sits above the inner circle */
+#scrollTopBtn span,
+#scrollTopBtn i {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover scale still works */
+#scrollTopBtn:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------- CONTACT FORM ---------------- */
 
 .contact-form {

@@ -111,6 +111,40 @@
     </table>
 </div>
 
+
+
+
+
+
+<script>
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('scrollTopBtn');
+    if (window.scrollY > 300) {
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+    } else {
+        btn.style.opacity = '0';
+        btn.style.pointerEvents = 'none';
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- MAIN PAGE CONTENT -->
 <div id="pageContent">
 
@@ -118,8 +152,7 @@
     <h1>Contact</h1>
 
     <p>
-        If you’d like to reach out for collaboration, project inquiries, or general questions,
-        you can contact me through the form below or use the direct methods listed.
+        If you’d like to reach out, you can contact me through the form below (the form doesn't work) or use the direct methods listed.
     </p>
 
     <p>
@@ -149,6 +182,14 @@
         <button type="submit">Send Message</button>
     </form>
 </div>
+
+
+
+<div id="scrollTopBtn" onclick="scrollToTop()">
+    <span>&#9650;</span>
+</div>
+
+
 
 
 </body>
